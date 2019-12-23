@@ -8,6 +8,7 @@ import { useFirebase } from '../../../components/FirebaseProvider';
 import { useDocument } from 'react-firebase-hooks/firestore';
 import AppPageLoading from '../../../components/AppPageLoading';
 import { Prompt } from 'react-router-dom';
+// import Snackbar from '@material-ui/core/Snackbar';
 function StoreSetting(){
   const classes = useStyles();
   const {firestore, user} = useFirebase();
