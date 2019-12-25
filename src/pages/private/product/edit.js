@@ -133,7 +133,7 @@ function ProductEdit({match}){
           }))
         }
 
-        reader.onLoad =async ()=>{
+        reader.onload =async ()=>{
           setError(error => ({
             ...error,
             foto: ''
