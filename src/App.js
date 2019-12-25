@@ -8,9 +8,9 @@ import ForgotPassword from './pages/forgot-password';
 import NotFound from './pages/404';
 import Private from './pages/private';
 import PrivateRoute from './components/PrivateRoute';
-
-// firebase context provider
 import FirebaseProvider from './components/FirebaseProvider';
+// firebase context provider
+
 // import material-ui
 import CssBaseline from '@material-ui/core/CssBaseline';
 import ThemeProvider from '@material-ui/styles/ThemeProvider';
@@ -25,7 +25,7 @@ function App() {
 			<CssBaseline/>
 			<ThemeProvider theme={theme}>
 				<SnackbarProvider maxSnack={3} autoHideDuration={3000}>
-					<FirebaseProvider >
+					<FirebaseProvider>
 						<Router>
 							<Switch>
 								<PrivateRoute path="/" exact component={Private}/>
